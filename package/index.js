@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Hustler extends React.Component {
+class Strider extends React.Component {
   constructor (props) {
     super(props)
 
@@ -107,6 +107,6 @@ function Step ({ children, ...props }) {
 }
 
 module.exports = {
-  Hustler,
+  Strider,
   Step
 }

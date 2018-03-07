@@ -1,4 +1,4 @@
-# hustler
+# strider
 
 A stepper library, for use in any type of flow, onboarding, quiz. With some helpers for animating between steps but without getting too in the way.
 
@@ -8,7 +8,7 @@ A stepper library, for use in any type of flow, onboarding, quiz. With some help
 
 ```javascript
 import React from 'react'
-import { Hustler, Step } from 'hustler'
+import { Strider, Step } from 'react-strider'
 import cx from 'classnames'
 
 import Layout from './Layout'
@@ -28,7 +28,7 @@ class Quiz extends React.Component {
   render () {
     return (
       <Layout>
-        <Hustler activeIndex={0} transitionSpeed={400}>
+        <Strider activeIndex={0} transitionSpeed={400}>
           <Step>
             {({ next, goTo, active, hiding, activeIndex }) => (
               <div className={cx('step__wrapper', {
@@ -45,7 +45,7 @@ class Quiz extends React.Component {
                 'is-active': active,
                 'is-hiding': hiding
               })}>
-                <StepTwo next={next} step={activeIndex} prev={prev} handleProduct={(i) => this.setState({products: i})} />
+                <StepTwo next={next} step={activeIndex} prev={prev} handleProduct={(i) => this.setState({product: i})} />
               </div>
             )}
           </Step>
@@ -69,7 +69,7 @@ class Quiz extends React.Component {
               </div>
             )}
           </Step>
-        </Hustler>
+        </Strider>
       </Layout>
     )
   }

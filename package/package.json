@@ -1,10 +1,10 @@
 {
-  "name": "hustler",
-  "version": "1.0.2",
+  "name": "react-strider",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "license": "MIT",
-  "repository": "https://github.com/the-couch/hustler",
+  "repository": "https://github.com/the-couch/strider",
   "author": "iamkevingreen",
   "scripts": {
     "lint": "standard '*.js' --fix",
@@ -16,7 +16,7 @@
   "keywords": [
     "react",
     "stepper",
-    "hustler"
+    "strider"
   ],
   "devDependencies": {
     "babel-cli": "^6.24.0",
