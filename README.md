@@ -28,7 +28,7 @@ class Quiz extends React.Component {
   render () {
     return (
       <Layout>
-        <Stepper activeIndex={0} transitionSpeed={400}>
+        <Hustler activeIndex={0} transitionSpeed={400}>
           <Step>
             {({ next, goTo, active, hiding, activeIndex }) => (
               <div className={cx('step__wrapper', {
@@ -69,7 +69,7 @@ class Quiz extends React.Component {
               </div>
             )}
           </Step>
-        </Stepper>
+        </Hustler>
       </Layout>
     )
   }
