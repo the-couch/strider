@@ -45,7 +45,7 @@ class Quiz extends React.Component {
                 'is-active': active,
                 'is-hiding': hiding
               })}>
-                <StepTwo next={next} step={activeIndex} prev={prev} handleProduct={(i) => this.setState({product: i})} />
+                <StepTwo next={next} step={activeIndex} prev={prev} handleProduct={(i) => this.setState({products: i})} />
               </div>
             )}
           </Step>
